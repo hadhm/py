@@ -1,0 +1,70 @@
+{
+  "editor.renderIndentGuides": false,
+  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "workbench.iconTheme": "vscode-icons",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": [
+    "--extend-ignore=E111,E114"
+  ],
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfArgs": [
+    "--style",
+    "{based_on_style: chromium, indent_width: 2}"
+  ],
+  "python.pythonPath": "D:\\Code\\virtualenv38\\Scripts\\python.exe",
+  "workbench.colorTheme": "Solarized Dark",
+  "explorer.confirmDragAndDrop": false,
+  "window.menuBarVisibility": "default",
+  "workbench.colorCustomizations": {
+    // 行号颜色
+    "editorLineNumber.foreground": "#17a346",
+    // 行号背景
+    "editorGutter.background": "#020230",
+    // 选中背景
+    "editor.selectionBackground": "#a01c8a",
+    // 选中后按右键(离开)背景
+    "editor.inactiveSelectionBackground": "#440b1c",
+    // 当前光标所在单词(和其它相同单词)颜色
+    "editor.selectionHighlightBackground": "#250620"
+  },
+  // vscode默认启用了根据文件类型自动设置tabsize的选项
+  "editor.detectIndentation": false,
+  // 重新设定tabsize
+  "editor.tabSize": 2,
+  // 每次保存的时候自动格式化
+  "editor.formatOnSave": true,
+  // 每次保存的时候将代码按eslint格式进行修复
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // 让prettier使用eslint的代码格式进行校验
+  // "prettier.eslintIntegration": true,
+  // 去掉代码结尾的分号
+  "prettier.semi": false,
+  // 使用单引号替代双引号
+  "prettier.singleQuote": true,
+  // 更改json格式化工具(默认是vocode.configuration-editing)
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // 更改html默认格式化工具(默认是vscode.html-language-features)
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // 更改ts默认格式化工具(默认为vocode.typescript-language-features)
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "markdown.extension.toc.omittedFromToc": {
+    // Use a path relative to your workspace.
+    "error_code.md": [
+      "# Introduction",
+      "## Also omitted"
+    ]
+  },
+  "editor.wordWrap": "on"
+}
